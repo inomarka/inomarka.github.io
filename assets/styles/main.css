@@ -429,8 +429,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   background: url("/assets/img/bg3.jpg") repeat-x;
-  flex-wrap: wrap;
-  margin-top: 30px; }
+  flex-wrap: wrap; }
   footer .about {
     color: #e3e3e3;
     text-align: center;
@@ -482,7 +481,8 @@ main.index {
   flex-wrap: wrap;
   max-width: 960px;
   align-self: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 20px; }
   main.index h1 {
     text-align: center;
     width: 100%;
@@ -792,6 +792,68 @@ main.tags {
   margin: 20px auto;
   width: 80%;
   max-width: 400px; }
+
+main.catalog {
+  margin: 0;
+  padding: 0;
+  max-width: 960px; }
+  @media screen and (min-width: 600px) {
+    main.catalog {
+      display: flex;
+      margin: 0 auto; }
+      main.catalog aside.catalog-list {
+        flex: 1 0 25%; } }
+  main.catalog aside.catalog-list {
+    background: #f7b700; }
+    main.catalog aside.catalog-list ul {
+      padding: 0;
+      margin: 0; }
+      @media screen and (min-width: 600px) {
+        main.catalog aside.catalog-list ul {
+          margin-top: 30px; } }
+      main.catalog aside.catalog-list ul li {
+        font-family: "Oswald", serif;
+        color: #171717;
+        list-style: none;
+        display: inline-block;
+        padding: 6px 10px;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        -moz-transition: 0.3s ease-out;
+        -webkit-transition: 0.3s ease-out;
+        -o-transition: 0.3s ease-out;
+        text-decoration: none; }
+        main.catalog aside.catalog-list ul li:hover {
+          color: #e3e3e3; }
+        @media screen and (min-width: 600px) {
+          main.catalog aside.catalog-list ul li {
+            display: block; } }
+  main.catalog section.content {
+    padding: 20px; }
+    main.catalog section.content img {
+      display: block;
+      margin: 10px auto; }
+    main.catalog section.content .content-item {
+      display: none; }
+  main.catalog .button {
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    background: #f7b700;
+    color: #171717;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out; }
+    main.catalog .button:hover {
+      color: #e3e3e3; }
+    @media screen and (min-width: 600px) {
+      main.catalog .button {
+        float: right; } }
 
 html {
   background: #e3e3e3;
